@@ -1,0 +1,32 @@
+.scrollTop {
+  position: fixed;
+  width: 5%;
+  bottom: 30px;
+  right: 15px;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: scrollArrow 0.5s linear infinite alternate-reverse;
+  transition: opacity 0.4s;
+  /* opacity: 0.5; */
+  color: #9ca3af;
+  /* background-color: red; */
+}
+
+.scrollTop:hover {
+  opacity: 1;
+  color: #4b5563;
+}
+
+@keyframes scrollArrow {
+  0% {
+    /* opacity: 0; */
+    transform: translateY(-0.7rem);
+  }
+  100% {
+    /* opacity: 0.5; */
+    transform: translateY(0.7rem);
+  }
+}

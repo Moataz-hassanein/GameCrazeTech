@@ -1,0 +1,44 @@
+.options-container {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #6b7280;
+  /* color: #4edb4e; */
+  font-weight: bolder;
+  text-align: center;
+}
+label {
+  color: #082f49;
+}
+
+.canIRunBtn {
+  --bg: #082f49 ;
+  --text-color: white;
+  position: relative;
+  /* width: 212%; */
+
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #0c4a6e 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.canIRunBtn:hover {
+  opacity: 1;
+}
+
+.canIRunBtn:active {
+  top: 4px;
+  box-shadow: #0c4a6e 0px 3px 2px, #000 0px 3px 5px;
+}
+
+.canIRunBtn:focus,
+.canIRunBtn:active {
+  outline: none;
+}

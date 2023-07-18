@@ -1,0 +1,51 @@
+.card {
+  background-color: #091020;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  transition: transform 0.4s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+.card:hover {
+  transform: scale(1.05);
+  /* border: 2px solid #f96e6c;
+  box-shadow: 1px 1px 35px 1px #f96e6c; */
+  /* box-shadow: 1px 1px 25px 1px #000000ee; */
+  /* animation: animate-neonGlow 3s linear infinite; */
+  /* animation: rotation_481 900ms infinite linear; */
+  animation: floating 800ms infinite linear;
+}
+
+@keyframes animate-neonGlow {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+    /* filter: hue-rotate(0deg); */
+  }
+
+  50% {
+    transform: translateY(10px);
+    /* filter: hue-rotate(180deg); */
+  }
+
+  100% {
+    transform: translateY(0px);
+    /* filter: hue-rotate(360deg); */
+  }
+}
