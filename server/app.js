@@ -20,7 +20,7 @@ const {
 const app = express();
 
 //! MIDDLEWARE
-app.use(cors());
+app.use(cors({ origin: "https://game-craze-tech.netlify.app" }));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cookieParser());
