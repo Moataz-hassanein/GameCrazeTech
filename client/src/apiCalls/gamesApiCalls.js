@@ -6,6 +6,6 @@ export const fetchGames = async (setGames, setOriginalGames) => {
     "https://game-tech-server.onrender.com/games_gct"
   );
   setGames(res.data.data);
-  console.log(res);
+
   setOriginalGames(res.data.data);
 };
