@@ -26,7 +26,7 @@ const corsOptions = {
   optionsSuccessStatus: 204,
 };
 //! MIDDLEWARE
-app.use(cors(corsOptions));
+app.use(cors(/* corsOptions */));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cookieParser());
