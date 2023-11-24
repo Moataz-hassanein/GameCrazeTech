@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const fetchGames = async (setGames, setOriginalGames) => {
-  const res = await axios.get("https://gamecrazetech.onrender.com/games_gct");
+  const res = await axios.get("http://localhost:8000/games_gct");
 
   setGames(res.data.data);
 
